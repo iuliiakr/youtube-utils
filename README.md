@@ -32,22 +32,22 @@ Arguments and Options:
 
 Basic
 ```bash
-python scripts/youtube-playlist-duration.py "https://www.youtube.com/playlist?list=PL-osiE80TeTucQ08e_hIs7B2tOltWf1Dd"
+python scripts/youtube-playlist-duration.py "[URL]"
 ```
 
 To calculate the duration of only the videos that are longer than 15 minutes:
 ```bash
-python scripts/youtube-playlist-duration.py -d 15 "https://www.youtube.com/playlist?list=PL-osiE80TeTucQ08e_hIs7B2tOltWf1Dd"
+python scripts/youtube-playlist-duration.py -d 15 "[URL]"
 ```
 
 To save the links of videos in the playlist that are longer than 30 minutes to a file named my_playlist.txt:
 ```bash
-python scripts/youtube-playlist-duration.py -d 30 -s my_playlist.txt "https://www.youtube.com/playlist?list=PL-osiE80TeTucQ08e_hIs7B2tOltWf1Dd"
+python scripts/youtube-playlist-duration.py -d 30 -s [my_playlist.txt] "[URL]"
 ```
 (This will create a my_playlist.txt file in the same directory.)
 
 To use the saved file for bulk downloads:
 ```bash
-yt-dlp -a long_videos.txt
+yt-dlp -a [my_playlist.txt]
 ```
 
