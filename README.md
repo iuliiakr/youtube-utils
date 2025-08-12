@@ -4,13 +4,20 @@ Python utils for analyzing available data on YouTube.
 # Content
 
 youtube_duration_calculator_api.py
-- [YouTube Playlist Duration Calculator (uses YouTube Data API v3)](#youtube-playlist-duration-calculator)
-- [YouTube Playlist Duration Calculator (uses yt-dlp)](#youtube-playlist-duration-calculator)
+- [YouTube Playlist Duration Calculator (uses YouTube Data API v3)](#youtube-playlist-duration-calculator) - for large projects
+- [YouTube Playlist Duration Calculator (uses yt-dlp)](#youtube-playlist-duration-calculator) - for quick jobs
 
 
 ## YouTube Playlist Duration Calculator (uses YouTube Data API v3)
 [scripts/youtube-duration-calculator-ytdlp.py](https://github.com/iuliiakr/youtube-utils/blob/main/scripts/youtube-duration-calculator-ytdlp.py)
 
+Uses the YouTube Data API to calculate the total duration of videos from a YouTube channel, playlist, single video, or a list of URLs in a text file.
+Options:
+- <b>Duration filtering</b>: include only videos longer than [MINIMAL_DURATION_IN_MINUTES],
+- <b>Batch processing</b>: input TXT file with links to YouTube videos, playlists or channels,
+- <b>Export links</b>: save links to videos, included in calculation, to a TXT file (for download).
+
+<br>
 
 ## YouTube Playlist Duration Calculator (uses yt-dlp)
 [scripts/youtube-duration-calculator-ytdlp.py](https://github.com/iuliiakr/youtube-utils/blob/main/scripts/youtube-duration-calculator-ytdlp.py)
