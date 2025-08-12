@@ -3,7 +3,7 @@
 A Python tool for searching YouTube videos using the **YouTube Data API v3** with advanced filters for language, country, and video duration.  
 Supports both YouTube's built-in duration categories and a **custom minimum duration filter**.
 
----
+<br>
 
 ## ✨ Features
 - Search YouTube videos by **keyword**.
@@ -16,7 +16,7 @@ Supports both YouTube's built-in duration categories and a **custom minimum dura
 - Output results to **console**, **TXT**, or **JSON** file.
 - Automatically formats video durations as `HH:MM:SS`.
 
----
+<br>
 
 ### Install dependencies:
 
@@ -31,7 +31,7 @@ export YOUTUBE_API_KEY="YOUR_API_KEY_HERE"
 ```
 You can obtain an API key from the Google Cloud Console.
 
----
+<br>
 
 ## 🚀 Usage
 Basic syntax:
@@ -59,7 +59,7 @@ Save results to a JSON file:
 python3 youtube_search.py "lofi hip hop" en -n 20 -o results.json
 ```
 
----
+<br>
 
 ## ⚙️ Command-Line Arguments
 | Argument               | Type / Choices                   | Description                                                  |
@@ -72,7 +72,7 @@ python3 youtube_search.py "lofi hip hop" en -n 20 -o results.json
 | `-n`, `--max-results`  | integer (1–50)                   | Number of results to return (default: `10`).                 |
 | `-o`, `--output`       | `.txt` or `.json` filename       | Save output to file instead of printing to console.          |
 
----
+<br>
 
 ## Output Format
 - Console:
@@ -96,7 +96,7 @@ python3 youtube_search.py "lofi hip hop" en -n 20 -o results.json
 ]
 ```
 
- ---
+<br>
 
  ## 🛠 Troubleshooting
  
