@@ -29,22 +29,22 @@ export YOUTUBE_API_KEY='YourApiKey'
 ### Usage
 Analyzing a single video, a playlist or a channel:
 ```bash
-python youtube-duration-calculator-api.py "https://www.youtube.com/channel/UCtmY49Zn4l0RMJnTWfV7Wsg"
+python scripts/youtube-duration-calculator-api.py "https://www.youtube.com/channel/UCtmY49Zn4l0RMJnTWfV7Wsg"
 ```
 
 Using a TXT file for bulk processing:
 ```bash
-python youtube-duration-calculator-api.py [LINK_TO_YOUR_INPUT_FILE.txt]
+python scripts/youtube-duration-calculator-api.py [LINK_TO_YOUR_INPUT_FILE.txt]
 ```
 
 (Optional Flags) Calculate duration for videos longer than 60 minutes and save their links:
 ```bash
-python youtube-duration-calculator-api.py "https://www.youtube.com/playlist?list=PLF-HhhjMki5mV1OrDe5YkVkS8UIi4lY7m" --min-duration 60 --save-links
+python scripts/youtube-duration-calculator-api.py "https://www.youtube.com/playlist?list=PLF-HhhjMki5mV1OrDe5YkVkS8UIi4lY7m" --min-duration 60 --save-links
 ```
 or
 
 ```bash
-python youtube-duration-calculator-api.py "https://www.youtube.com/playlist?list=PLF-HhhjMki5mV1OrDe5YkVkS8UIi4lY7m" -m 60 -s
+python scripts/youtube-duration-calculator-api.py "https://www.youtube.com/playlist?list=PLF-HhhjMki5mV1OrDe5YkVkS8UIi4lY7m" -m 60 -s
 ```
 
 
@@ -64,7 +64,7 @@ pip install --upgrade yt-dlp
 
 ### Usage:
 ```bash
-python youtube-duration-calculator-yt-dlp.py [OPTIONS] "YOUTUBE_URL"
+python scripts/youtube-duration-calculator-yt-dlp.py [OPTIONS] "YOUTUBE_URL"
 ```
 <b>IMPORTANT:</b> Wrap the YouTube playlist URL in single (') or double (") quotes.
 
@@ -78,17 +78,17 @@ Arguments and Options:
 
 Basic
 ```bash
-python youtube-duration-calculator-yt-dlp.py "[URL]"
+python scripts/youtube-duration-calculator-yt-dlp.py "[URL]"
 ```
 
 To calculate the duration of only the videos that are longer than 15 minutes:
 ```bash
-python youtube-duration-calculator-yt-dlp.py -d 15 "[URL]"
+python scripts/youtube-duration-calculator-yt-dlp.py -d 15 "[URL]"
 ```
 
 To save the links of videos in the playlist that are longer than 30 minutes to a file named my_playlist.txt:
 ```bash
-python youtube-duration-calculator-yt-dlp.py -d 30 -s [my_playlist.txt] "[URL]"
+python scripts/youtube-duration-calculator-yt-dlp.py -d 30 -s [my_playlist.txt] "[URL]"
 ```
 (This will create a my_playlist.txt file in the same directory.)
 
