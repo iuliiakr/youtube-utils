@@ -19,9 +19,15 @@ Options:
 - <b>Export links</b>: save links to videos, included in calculation, to a TXT file (for download).
 
 ### Prerequisites
-1. Get a YouTube Data API v3 Key
-2. ```bash pip install google-api-python-client isodate ```
-3. Set the Environment Variable
+Get a YouTube Data API v3 Key
+```bash
+   pip install google-api-python-client isodate
+```
+Set the Environment Variable.
+```bash
+# Replace 'YourApiKey' with your key
+export YOUTUBE_API_KEY='YourApiKey'
+```
    
 <br>
 
