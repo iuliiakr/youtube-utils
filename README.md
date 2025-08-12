@@ -20,15 +20,38 @@ Options:
 
 ### Prerequisites
 Get a YouTube Data API v3 Key
+Install third-party Python libraries.
 ```bash
-   pip install google-api-python-client isodate
+pip install google-api-python-client isodate
 ```
 Set the Environment Variable.
 ```bash
 # Replace 'YourApiKey' with your key
 export YOUTUBE_API_KEY='YourApiKey'
 ```
-   
+
+### Usage
+Analyzing a single video, a playlist or a channel:
+```bash
+python3 youtube_playlist_duration_api.py "https://www.youtube.com/channel/UCtmY49Zn4l0RMJnTWfV7Wsg"
+```
+
+Using a TXT file for bulk processing:
+```bash
+python3 youtube_playlist_duration_api.py [LINK_TO_YOUR_INPUT_FILE.txt]
+```
+
+(Optional Flags) Calculate duration for videos longer than 60 minutes and save their links:
+```bash
+python3 youtube_playlist_duration_api.py "https://www.youtube.com/playlist?list=PLF-HhhjMki5mV1OrDe5YkVkS8UIi4lY7m" --min-duration 60 --save-links
+```
+or
+
+```bash
+python3 youtube_playlist_duration_api.py "https://www.youtube.com/playlist?list=PLF-HhhjMki5mV1OrDe5YkVkS8UIi4lY7m" -m 60 -s
+```
+
+
 <br>
 
 ## YouTube Playlist Duration Calculator (uses yt-dlp)
