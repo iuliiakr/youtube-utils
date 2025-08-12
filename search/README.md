@@ -1,6 +1,6 @@
-# YouTube Advanced Search CLI
+# YouTube Advanced Search
 
-A Python command-line tool for searching YouTube videos using the **YouTube Data API v3** with advanced filters for language, country, and video duration.  
+A Python tool for searching YouTube videos using the **YouTube Data API v3** with advanced filters for language, country, and video duration.  
 Supports both YouTube's built-in duration categories and a **custom minimum duration filter**.
 
 ---
