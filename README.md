@@ -3,7 +3,7 @@ Python utils for analyzing available data on YouTube.
 
 # Content
 
-- [YouTube Playlist Duration Calculator](#get-total-duration-of-audio-in-an-input-directory-uses-ffprobe)
+- [YouTube Playlist Duration Calculator](#youtube-playlist-duration-calculator)
 
 ## YouTube Playlist Duration Calculator
 [scripts/youtube-duration-calculator-ytdlp.py](https://github.com/iuliiakr/youtube-utils/blob/main/scripts/youtube-duration-calculator-ytdlp.py)
