@@ -37,7 +37,9 @@ You can obtain an API key from the Google Cloud Console.
 Basic syntax:
 ```bash
 python3 youtube_search.py "SEARCH_QUERY" LANGUAGE_CODE [OPTIONS]
-Examples:
+```
+
+### Examples:
 
 Search for Python tutorials in English:
 ```bash
